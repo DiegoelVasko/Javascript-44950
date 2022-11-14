@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calula el talle de tu pie</h1>
+    <p id="par"></p>
+    <div>
+        <label for="genero">Seleccione el género:</label>
+            <select name="genero" id="genero">
+                <option value="FEMENINO" selected>Femenino</option>
+                <option value="MASCULINO">Masculino</option>
+                <option value="INFANTIL">Infantil</option>
+            </select>
+
+    </div>
+    <div>
+        <label for="centimetros">Ingrese la medida en cm:</label>
+        <input name="centimetros" id="centimetros" type="">
+        <button onclick="calculadorTalle()">Calcular</button>
+        <p id="mensaje" ></p>
+
+    </div>
+</div> 
+<p id="resultado"></p>
+<script src="calculadorDeTalle.js"></script>
+</body>
+</html>
