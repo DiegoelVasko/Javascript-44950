@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octopus Store | Preguntas Frecuentes</title>
+    <meta name="description" content= "Despejamos tus dudas sobre talles de calzados,compras, medios de pago, envios y politicas de cambio">
+    <meta name="keywords" content="zapatillas, calzado, basquetbol, baloncesto, basketball, basquet, nba, shoe tester, evaluaciones, testeo, performance, nike, adidas, jordan, under armour, new balance, James Harden, Steph Curry, Lebron James, Kyrie Irving, KD, Kevin Durant, Donovan Mitchell, Luka Doncic, Gianis Antetokounmpo, zoom freak, Trae Young, Kawhi Leonard, talles, cambios, envíos, formas de pago, devolución ">
+    <link rel="shortcut icon" href="../multimedia/pulpostorelogo.svg">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+     <!--Inicio Header-->
+     <header>
+        <nav class="navbar bg-light fixed-top">
+          <div class="container-fluid">
+              <img class="navbar-brand header__logo" src="../multimedia/pulpostorelogo.svg"alt= "logo">
+              <button id="loggin" type="button">Ingrese</button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>    
+                  <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Octopus Store</h2>
+                  <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Basketball Shoes</h4>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item menu__li"><a class="nav-link" href="../index.html">Inicio</a></li>
+                  <li class="nav-item menu__li"><a class="nav-link" href="./productos.html">Productos</a></li>
+                  <li class="nav-item menu__li"><a class="nav-link" href="./favoritos.html">Favoritos</a></li>
+                  <li class="nav-item menu__li"><a class="nav-link" href="./shoetester.html">Shoe Tester</a></li>
+                  <li class="nav-item menu__li"><a class="nav-link" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                  <li class="nav-item menu__li"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                  <li class="nav-item"><a class="social" href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/ig_icon.svg" alt="Instagram"></a></li>
+                  <li class="nav-item"><a class="social" href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/wa_icon.svg" alt="Whatsapp"></a></li>
+                </ul>  
+              </div>
+            </div>
+          </div>
+        </nav>
+ 
+    </header>
+
+<!--Fin Header-->       
+    </header>
+    <main class="principal">
+        <h1>Preguntas Frecuentes</h1>
+        <section class="preguntas">
+            <article class="preguntas__compra">
+                <h2>Como realizar la compra</h2>
+                <p>Escribinos por cuaquiera de nuestros medios de contacto con el modelo de zapatilla que buscas y el talle segun la marca. Nosotros te informamos la disponibilidad y precio del mismo, ademas de como proseguir el proceso de compra</p>
+            </article>
+            <Article class="preguntas__pagos">
+                <h2>Medios de Pago</h2>
+                <ul>
+                    <li>Efectivo</li>
+                    <li>Transferencia</li>
+                    <li>Debito</li>
+                    <li>Credito(AHORA 12)</li>
+                    <li>Mercado Pago</li>
+                </ul>
+            </Article>
+            <article class="preguntas__talles">
+                <H2>Talles</H2>
+                <div class="talles">
+                    <h2>Como saber el talle de tu pie</h2>
+                    <p id="par"></p>
+                    <div>
+                        <label for="genero">Seleccione el género:</label>
+                            <select name="genero" id="genero">
+                                <option value="FEMENINO" selected>Femenino</option>
+                                <option value="MASCULINO">Masculino</option>
+                            </select>
+
+                    </div>
+                    <div>
+                        <label for="centimetros">Ingrese la medida en cm:</label>
+                        <input name="centimetros" id="centimetros" type="text">
+                        <button onclick="calculadorTalle()">Calcular</button>
+                        <p id="mensaje" ></p>
+
+                    </div>
+                </div> 
+                <p id="resultado"></p>
+
+                <!-- esto es lo que se trato que funcione
+                    
+                    <label for="genero">Seleccione el genero: 
+                    <select id="genero">
+                      <option value="">--Haga una elección--</option>
+                      <option value="Masculino">Masculino</option>
+                      <option value="Femenino">Femenino</option>
+                    </select>
+                  </label>
+                  <label for="">Ingrese la medida en cm:
+                      <input  id="centimetros" type="text">
+                  </label>
+                  <button onclick="calculadorTalle()">Calcular</button>
+                  <p id="mensaje" ></p>
+                  <p id="resultado"></p>-->
+
+
+                    <!--Esto es el html original
+                        <div>
+                        <h3>Under Armour</h3>
+                        <img class="tabla" src="../multimedia/tabla-talles-under-armor.jpg" alt="Tabla UA">
+                    </div>
+                    <div>
+                        <h3>Jordan</h3>
+                        <img class="tabla" src="../multimedia/tabla_talles_jordan.jpg" alt="Tabla Jordan">
+                    </div>
+                    <div>
+                        <h3>Nike</h3>
+                        <img class="tabla" src="../multimedia/tabla_talles_nike.jpg" alt="Tabla Nike">
+                    </div>
+                    <div>
+                        <h3>New Balance</h3>
+                        <img class="tabla" src="../multimedia/tabla-talle-NB.jpg" alt="Tabla New Balance">
+                    </div>
+                    <div>
+                        <h3>Adidas</h3>
+                        <img class="tabla" src="../multimedia/tabla_talles_adidas.jpg" alt="Tabla Adidas">
+                    </div>
+                </div>-->
+            </article>
+            <article class="preguntas__envio">
+                <h2>Segui tu pedido</h2>
+                <a href="https://www.correoargentino.com.ar/formularios/e-commerce"><button class="button envio">Click Aqui</button></a>
+            </article>
+            <article class="preguntas__cambios">
+                <h2>Política de Cambio</h2>
+                    <h3>¿CÓMO REALIZAR UN CAMBIO?</h3>
+                        <h4>Cambios</h4>
+                        <p>Se pueden realizar cambios dentro de los 30 días a partir de la recepción del pedido únicamente presentando el producto adquirido sin signos de uso.</p>
+                        <p> Para realizar el cambio podés enviar el producto a través de la empresa de correo que prefieras. El mismo debe ser enviado sin marcas embalado con papel o bolsa que no permita ver su contenido, con una etiqueta que indique <span> 478 nro 5360, La Plata, Buenos Aires (CP 1896) Destinatario Octopus Store</span>, indicando número de pedido, nombre, apellido y producto seleccionado para el cambio.</p>
+                        <h4>Importante</h4>
+                        <p>Todos los cambios se encuentran sujetos a disponibilidad de stock.</p>
+                        <p>Se contempla siempre el valor abonado por el producto adquirido y el precio vigente del producto elegido al momento de realizar el cambio. Si el nuevo producto elegido posee un valor mayor al adquirido, se debe abonar la diferencia correspondiente, mientras que si el cambio fuera sólo por talle, no se deberá abonar ninguna diferencia.</p>
+                        <p>En caso de que tengas alguna inquietud con el producto recibido, te pedimos por favor que nos escribas dentro de las 48 hs siguientes a la recepción del mismo a <span> octopus.store@gmail.com</span>, adjuntando imágenes del producto adquirido en su totalidad (Incluidas las suelas), indicando el número de pedido y detallando lo sucedido.</p>
+            </article>
+        </section>
+
+    </main>    
+    <footer><!--Inicio footer-->
+        <section class="footer">
+            <Ul class="footer__nav">
+                <li><a class="link-footer" href="../index.html">Inicio</a></li>
+                <li><a class="link-footer" href="./productos.html">Productos</a></li>
+                <li><a class="link-footer" href="./favoritos.html">Favoritos</a></li>
+                <li><a class="link-footer" href="./shoetester.html">Shoe Tester</a></li>
+                <li><a class="link-footer" href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a class="link-footer" href="./contacto.html">Contacto</a></li>
+            </Ul>
+        
+            <img class="footer__marca" src="../multimedia/pulpostoremarca.svg" alt="Marca">
+            <article class="footer__social">
+                <a href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/ig_icon.svg" alt="Instagram"></a>
+                <a href="https://web.whatsapp.com/"><img src="../multimedia/wa_icon.svg" alt="Whatsapp"></a>
+            </article>
+        </section>   
+        <div class="copyright">
+                <p>Copyright © 2022 |Octopus Store | Diseñado y desarrollado por VASKO</p>
+        </div>        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../Js/calculadorDeTalle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Js/loggin.js"></script>
+</body>
+</html>

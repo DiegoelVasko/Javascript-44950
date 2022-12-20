@@ -1,0 +1,80 @@
+/*estilo-preguntas*/
+
+.preguntas{
+    display: grid;
+    grid-template-areas: 
+     "titulo titulo titulo"
+     "compra compra talles"
+     "pagos envio talles"
+     "cambios cambios talles" 
+     "cambios cambios talles";
+     animation: fade-in-bottom 1s 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; 
+    
+    &__compra{
+        grid-area: compra;    
+    }
+    &__pagos{
+        grid-area: pagos;
+    }
+    &__talles{ 
+       grid-area: talles;
+    }
+    &__envio{
+        grid-area: envio;
+    }
+    &__cambios{
+        grid-area: cambios;
+    }
+    & h1{
+        grid-area: titulo;
+    }
+    & article{
+        
+        background-color: map-get($colors, color-secondary);
+        @include spacing($spacing-xsmall, $spacing-xsmall);
+        color: map-get($colors, color-primary);
+        font-size: map-get($text-size, text-base);
+        
+    }
+}
+
+.talles{       
+    overflow: auto;
+    max-height: 100rem;
+}
+.tabla{
+    width: 100%;
+}
+/*final-estilo-preguntas*/
+
+@media screen and (max-width: 768px) {
+    .talles{
+        max-height: 150rem;
+
+    }
+}    
+
+@media screen and (max-width: 480px) {
+    /*preguntas*/
+    .preguntas{
+        display: grid;
+        grid-template-areas: 
+         "titulo titulo "
+         "compra compra "
+         "pagos envio "
+         "cambios cambios " 
+         "talles talles ";
+    }
+    .talles{
+        display: flex;
+        overflow: auto;
+        gap: 1rem;
+        margin: 0.5rem auto;
+        max-width: 28rem;
+    }
+    .tabla{
+        height: 30rem ;
+        width: 28rem;
+    }
+    
+}

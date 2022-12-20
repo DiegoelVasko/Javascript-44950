@@ -46,5 +46,5 @@ function calculadorTalle() {
       mensajeStock= "No hay Stock";
     }  
     document.getElementById("resultado").innerHTML = `Tu número de calzado para ${GENERO} es:\n Talle Arg ${talleArg}\n Talle USA ${talleUsa}. ${mensajeStock}`;
-  }
 }
+  }

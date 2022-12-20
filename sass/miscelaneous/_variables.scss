@@ -1,0 +1,44 @@
+
+    /*colors*/
+    $colors: (
+        color-text: #f4772a,
+        color-base: #c4c4c499,
+        color-primary:#acbfa4,
+        color-secondary:#177e89e6,
+        color-section:#414141,
+        color-article: #414141cc,
+    );
+
+    @each $color, $value in $colors {
+        #{$color}{
+            color: #{$value};
+        }        
+    }
+
+    /*spacing*/
+    $spacing-xsmall: 1rem;
+    $spacing-small: 1.5rem;
+    $spacing-medium: 2rem;
+    $spacing-large: 3rem;
+
+    
+
+    /*font-family*/
+    $font-principal:  'Signika Negative', sans-serif;    
+    $font-secondary: 'Times New Roman', Times, serif;
+    $font-h1: 'Acme', sans-serif;
+
+    /*font-size*/
+    $text-size: (
+        text-large: 4.8em,
+        text-medium: 3.2em,   
+        text-base: 1.8em,
+        text-small: 1.4em,
+        text-xsmall: 1em
+    );
+
+    @each $font-size, $value in $text-size{
+        #{$font-size}{
+            font-size: #{$value};
+        }        
+    }

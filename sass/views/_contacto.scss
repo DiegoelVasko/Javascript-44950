@@ -1,0 +1,132 @@
+/*estilo-contacto*/
+.contacto{
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-small;
+    justify-content: space-evenly;
+    padding: $spacing-large;
+    & article{
+        background-color: map-get($colors, color-secondary);
+        padding: $spacing-xsmall;      
+        color: map-get($colors, color-primary);
+        
+        
+    }
+    &__info{
+        height: fit-content;
+        animation: fade-in-bottom 1s 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        &__title{
+            font-size: map-get($text-size, text-large);
+        }
+        &__data{
+            margin-top: $spacing-small;
+            @extend article;
+                   
+            & h3{
+                margin: $spacing-medium;
+                color: map-get($colors, color-base);
+                text-decoration: underline;
+            }    
+            & p{
+            margin: $spacing-medium $spacing-large;
+            font-size: map-get($text-size, text-medium); 
+            }
+        }
+    }
+}
+
+
+.formulario{
+    animation: fade-in-bottom 1s 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+form{
+    font-size: map-get($text-size, text-base);
+    display: flex;
+    flex-direction: column;
+    
+    & label{
+    color: map-get($colors, color-primary);
+    }
+    
+   
+}
+.form__item{
+    @include spacing($spacing-small, $spacing-xsmall);
+    background-color: map-get($colors, color-secondary);
+    color: map-get($colors, color-primary);
+    @extend article;
+}
+
+.consulta__option{
+    color: map-get($colors, color-text);
+    font-size: map-get($text-size, text-xsmall);
+    font-family: $font-principal;
+}
+
+#tipo_consulta{
+
+    background-color: map-get($colors, color-secondary);
+    color: map-get($colors, color-primary);
+    font-family: 'Signika', sans-serif;
+    @extend article
+}
+#message{
+
+    margin-top: $spacing-small;
+    background-color: map-get($colors, color-secondary);
+    color: map-get($colors, color-text);
+    @extend article
+}
+::placeholder{
+   padding: $spacing-xsmall; 
+   color: map-get($colors, color-primary);
+   font-size: map-get($text-size, text-xsmall);
+   font-family: $font-principal; 
+}
+
+/*final-estilo-contacto*/
+
+@media screen and (max-width: 768px) {
+    /*contacto*/
+    .contacto{
+        
+        justify-content: space-around;       
+        padding: $spacing-medium;
+        
+        & article{
+            margin-top: $spacing-small;        
+        }    
+        &__info h3{
+            margin: $spacing-medium;
+            
+            text-decoration: underline;
+        }
+        &__info p{
+            margin: $spacing-medium;
+            
+        }
+    }
+    
+} 
+
+@media screen and (max-width: 480px) {
+     /*contacto*/ 
+    .contacto{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;       
+        padding: $spacing-medium;   
+        & article{
+            margin-top: $spacing-small;
+        }    
+        &__info h3{
+            margin: $spacing-medium;
+            color: map-get($colors, color-base);
+            text-decoration: underline;
+        }
+        &__info__data p{
+            margin: 0 auto;
+            font-size: map-get($text-size, text-base);
+        }
+    } 
+}

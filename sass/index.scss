@@ -1,0 +1,16 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+@import './miscelaneous/variables';
+@import './miscelaneous/mixin';
+@import './miscelaneous/normailze';
+@import './miscelaneous/animations';
+
+@import './partials/header';
+@import './partials/footer';
+
+@import './views/inicio';
+@import './views/productos';
+@import './views/shoetester';
+@import './views/preguntas-frecuentes';
+@import './views/contacto'

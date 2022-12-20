@@ -1,0 +1,64 @@
+/*estilo-productos*/
+.productos{
+    padding-bottom: $spacing-xsmall;
+
+}
+.calzado{
+    width: 92%;
+    background-color: map-get($colors, color-secondary);
+    @include spacing(0.5rem auto, $spacing-small);
+    color: map-get($colors, color-primary);
+    font-size: map-get($text-size, text-small);
+    animation: fade-in-right 1s ease-in-out 0.8s both;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: flex-start;
+   
+    & h2 {
+        font-weight: bolder;
+        font-style: italic;
+        text-decoration-line: underline;
+        padding-bottom: 0;
+    }
+    & p{
+        margin-top: $spacing-small;
+    }  
+    & H3{
+        font-style: italic;
+        text-decoration-line: underline;
+        margin-bottom: $spacing-xsmall;
+    }  
+    &__li{
+        
+        list-style-type: none; 
+    } 
+}   
+.carousel-inner{
+    border-radius: 6px;
+    border: map-get($colors, color-section) 1pt solid;
+}
+span.carousel-control-prev-icon{
+    background-image: url(../multimedia/chevron-left.svg) ;
+}
+span.carousel-control-next-icon{
+    background-image: url(../multimedia/chevron-right.svg);
+}
+  
+/*final-estilo-productos  */
+
+@media screen and (max-width: 1024px) {
+    .calzado{
+       align-items: flex-start;
+    }
+}
+@media screen and (max-width: 768px) {    
+    
+    .calzado{
+        display: block;
+        
+    }
+    .carousel-inner{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
