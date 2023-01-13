@@ -1,4 +1,4 @@
-const zapatillas = [
+/*const zapatillas = [
   {modelo: "adidas one", genero: "FEMENINO", talle: 38},
   {modelo: "Nike Running", genero: "MASCULINO", talle: 44},
   {modelo: "Puma deluxe", genero: "MASCULINO", talle: 42},
@@ -12,7 +12,7 @@ const zapatillas = [
   {modelo: "Nike Running", genero: "INFANTIL", talle: 32},
   {modelo: "Puma running", genero: "FEMENINO", talle: 40},
   {modelo: "Nike Running", genero: "INFANTIL", talle: 29},
-]
+]*/
 
 document.getElementById("par").innerHTML =
   "Para medir la longitud en cm de sus pies correctamente, coloca su pie contra la pared sobre una hoja de papel. Recuerda siempre descalzo y de pie. Sitúa bien el talón contra la pared asegurándote que tiene la planta del pie totalmente plana y recta. Haz una marca donde finaliza el dedo más largo. Mide en cm la distancia desde el final del papel hasta la marca del dedo, en línea recta.";
@@ -38,13 +38,13 @@ function calculadorTalle() {
         let talleUsa= Math.round(CM * 1.08 / 0.847 - 11.5 + 0.4);
          
       }
-    for (let i= 0; i < zapatillas.length; i++){
+    /*for (let i= 0; i < zapatillas.length; i++){
       if(zapatillas[i].genero === GENERO && zapatillas[i].talle === talleArg) {
         mensajeStock= "Hay Stock";
         break;
       }  
       mensajeStock= "No hay Stock";
-    }  
-    document.getElementById("resultado").innerHTML = `Tu número de calzado para ${GENERO} es:\n Talle Arg ${talleArg}\n Talle USA ${talleUsa}. ${mensajeStock}`;
+    }*/  
+    document.getElementById("resultado").innerHTML = `Tu número de calzado para ${GENERO} es:<br> Talle Arg ${talleArg}<br> Talle USA ${talleUsa}. ${mensajeStock}`;
 }
   }

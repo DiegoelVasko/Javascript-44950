@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octopus Store | Mis Compras</title>
+    <meta name="description" content="Las últimas y mas populares zapatillas de la NBA, te damos una descripción de cada producto detalladamente y de las partes que la componen"/>
+    <meta name="keywords" content="zapatillas, calzado, basquetbol, baloncesto, basketball, basquet, nba, shoe tester, evaluaciones, testeo, performance, nike, adidas, jordan, under armour, new balance, James Harden, Steph Curry, Lebron James, Kyrie Irving, KD, Kevin Durant, Donovan Mitchell, Luka Doncic, Gianis Antetokounmpo, zoom freak, Trae Young, Kawhi Leonard, suela, upper, mediasuela"/>
+    <link rel="shortcut icon" href="../multimedia/pulpostorelogo.svg" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Inicio Header-->
+    <header>
+      <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <img class="navbar-brand header__logo" src="../multimedia/pulpostorelogo.svg" alt="logo"/>
+          <button id="loggin" class="button" type="button">Ingrese</button>
+          <button  class="navbar-toggler" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+              <h2 class="offcanvas-title" id="offcanvasNavbarLabel"> Octopus Store </h2>
+              <h4 class="offcanvas-title" id="offcanvasNavbarLabel"> Basketball Shoes </h4>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item menu__li">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item menu__li">
+                  <a class="nav-link" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item menu__li">
+                    <a class="nav-link" href="./misCompras.html">Mis Compras</a>
+                </li>                    
+                <li class="nav-item menu__li">
+                  <a class="nav-link" href="./shoetester.html">Shoe Tester</a>
+                </li>
+                <li class="nav-item menu__li"><a class="nav-link" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item menu__li"><a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <a class="social" href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/ig_icon.svg" alt="Instagram"/></a>
+              <a class="social" href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/wa_icon.svg" alt="Whatsapp"/></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Fin Header-->
+    <main class="principal">
+      <h1 class="misCompras__tittle">Mis Compras</h1>
+      <div id="contenedorCarrito" class="row"></div>
+      <button  class="button" id="verCarrito">Ver Carrito</button>
+      <button class="button" id="vaciarCarrito">Vaciar Carrito</button>
+      <h3>El total de la compra es de <span id="total"> </span> </h3>
+        
+
+    </main>
+    <footer>
+      <!--Inicio footer-->
+      <section class="footer">
+        <ul class="footer__nav">
+          <li><a class="link-footer" href="../index.html">Inicio</a></li>
+          <li><a class="link-footer" href="./productos.html">Productos</a></li>
+          <li><a class="link-footer" href="./misCompras.html">Mis Compras</a></li>
+          <li><a class="link-footer" href="./shoetester.html">Shoe Tester</a></li>
+          <li><a class="link-footer" href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+          <li><a class="link-footer" href="./contacto.html">Contacto</a></li>
+        </ul>
+
+        <img
+          class="footer__marca"
+          src="../multimedia/pulpostoremarca.svg"
+          alt="Marca"
+        />
+        <article class="footer__social">
+          <a href="https://www.instagram.com/?hl=es-la"
+            ><img src="../multimedia/ig_icon.svg" alt="Instagram"
+          /></a>
+          <a href="https://web.whatsapp.com/"
+            ><img src="../multimedia/wa_icon.svg" alt="Whatsapp"
+          /></a>
+        </article>
+      </section>
+      <div class="copyright">
+        <p>
+          Copyright © 2022 |Octopus Store | Diseñado y desarrollado por VASKO
+        </p>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/productos.js"></script>
+   
+    <script src="../Js/loggin.js"></script>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-class calzado {
+/*class calzado {
     constructor(marca, modelo, precio, color, stock) {
       this.marca = marca;
       this.modelo = modelo;
@@ -11,7 +11,7 @@ class calzado {
       return this.marca + " " + this.modelo + " $" + this.precio;
     }
   }
-  
+  */
   const IVA = 0.21;
   
   let arreglo_calzado = new Array();

@@ -11,10 +11,9 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../style/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"/>
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   </head>
   <body>
     <!--Inicio Header-->
@@ -22,7 +21,7 @@
       <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
           <img class="navbar-brand header__logo" src="../multimedia/pulpostorelogo.svg" alt="logo"/>
-          <button id="loggin" type="button">Ingrese</button>
+          <button id="loggin" class="button" type="button">Ingrese</button>
           <button  class="navbar-toggler" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,22 +33,12 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item menu__li">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item menu__li">
-                  <a class="nav-link" href="./productos.html">Productos</a>
-                </li>
-                <li class="nav-item menu__li">
-                  <a class="nav-link" href="./favoritos.html">Favoritos</a>
-                </li>
-                <li class="nav-item menu__li">
-                  <a class="nav-link" href="./shoetester.html">Shoe Tester</a>
-                </li>
-                <li class="nav-item menu__li"><a class="nav-link" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-                <li class="nav-item menu__li"><a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
+                <li class="nav-item menu__li"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item menu__li"><a class="nav-link" href="./productos.html">Productos</a></li>
+                <li class="nav-item menu__li"><a class="nav-link" href="./misCompras.html">Mis Compras</a> 
+                <li class="nav-item menu__li"><a class="nav-link" href="./shoetester.html">Shoe Tester</a></li>                </li>
+                <li class="nav-item menu__li"><a class="nav-link" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                <li class="nav-item menu__li"><a class="nav-link" href="./contacto.html">Contacto</a></li>
               </ul>
               <a class="social" href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/ig_icon.svg" alt="Instagram"/></a>
               <a class="social" href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/wa_icon.svg" alt="Whatsapp"/></a>
@@ -62,8 +51,8 @@
     <!--Fin Header-->
     <main class="principal">
       <h1 class="productos__tittle">Productos</h1>
-      <section class="productos">
-        <article class="calzado">
+      <section id="contenedorProductos" class="productos">
+        <!--<article   class="calzado">
           <div
             id="carouselExampleControls-1"
             class="carousel slide container-fluid"
@@ -1518,7 +1507,7 @@
               </li>
             </ul>
           </div>
-        </article>
+        </article>-->
       </section>
     </main>
     <footer>
@@ -1527,7 +1516,7 @@
         <ul class="footer__nav">
           <li><a class="link-footer" href="../index.html">Inicio</a></li>
           <li><a class="link-footer" href="./productos.html">Productos</a></li>
-          <li><a class="link-footer" href="./favoritos.html">Favoritos</a></li>
+          <li><a class="link-footer" href="./misCompras.html">Mis Compras</a></li>
           <li><a class="link-footer" href="./shoetester.html">Shoe Tester</a></li>
           <li><a class="link-footer" href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
           <li><a class="link-footer" href="./contacto.html">Contacto</a></li>
@@ -1553,9 +1542,14 @@
         </p>
       </div>
     </footer>
-    <!-- JavaScript Bundle with Popper -->
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- SWEET ALERT -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/productos.js"></script>
+    <script src="../JS/miCompra.js"></script>
     <script src="../Js/loggin.js"></script>
     </body>
 </html>

@@ -1,0 +1,16 @@
+
+[
+    {"id": "1",  "marca":"ADIDAS", "modelo": "D.O.N ISSUE 3 'SAY CHEESE'", "precio": 38500, "stock": 3},
+    {"id": "2",  "marca":"NIKE", "modelo": "KD 14 'KY-D'","precio": 39000, "stock": 5},
+    {"id": "3",  "marca":"ADIDAS", "modelo": "DAME 8 '4TH QUARTER KO'","precio": 36000, "stock": 0},
+    {"id": "4",  "marca":"NIKE", "modelo": "ZOOM FREAK 3 'FREEZING TIME'","precio": 41000, "stock": 1},
+    {"id": "5",  "marca":"JORDAN", "modelo": "ZOOM SEPARATE 'MAVS'","precio": 42600, "stock": 3},
+    {"id": "6",  "marca":"NIKE", "modelo": "KYRIE 8 'FIRE & ICE'","precio": 40000, "stock": 4},
+    {"id": "7",  "marca":"NEW BALANCE", "modelo": "KAWHI 'POWER SOURCE'","precio": 39800, "stock": 2},
+    {"id": "8",  "marca":"UNDER ARMOUR", "modelo":"Curry 9 Sesame Street 'Count It'","precio": 42800, "stock": 3},
+    {"id": "9",  "marca":"NIKE", "modelo": "LEBRON 19 'MINNEAPOLIS LAKERS'","precio": 44500, "stock": 3},
+    {"id": "10",  "marca":"JORDAN", "modelo": "Air Jordan 36 'Black Infrared'","precio": 46300, "stock": 6},
+    {"id": "11",  "marca":"ADIDAS", "modelo": "TRAE YOUNG 1 'PIXELS'","precio": 37800, "stock": 2},
+    {"id": "12",  "marca":"ADIDAS", "modelo": "HARDEN VOL.6 'HIGHLIGHTER''","precio": 39200, "stock": 1}
+ 
+]

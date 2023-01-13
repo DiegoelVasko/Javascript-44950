@@ -16,9 +16,11 @@ let loggin = document.getElementById("loggin")
 
 loggin.addEventListener('click', async () => {
   const email  = await Swal.fire({
+    background: '#414141cc',
+    color: '#f4772a',
     title: 'Ingrese su Correo Electrónico ',
     input: 'email',
-    inputPlaceholder: 'Correo Electrónico',
+    inputPlaceholder: 'javascript1@coderhouse.com',
   })
 
 
@@ -27,14 +29,18 @@ loggin.addEventListener('click', async () => {
   
   if (!usuarioExistente) {
     await Swal.fire({
+      background: '#414141cc',
+      color: '#f4772a',
       icon: 'error',
       title: 'Usuario no registrado',
     })
   } else {
     const  password  = await Swal.fire({
+      background: '#414141cc',
+      color: '#f4772a',
       title: 'Ingrese su Contraseña',
       input: 'password',
-      inputPlaceholder: 'Contraseña',
+      inputPlaceholder: '44950',
       inputAttributes: {
         maxlength: 10,
         autocapitalize: 'off',
@@ -44,12 +50,16 @@ loggin.addEventListener('click', async () => {
 
     if (password.value != usuarioExistente.password) {
      await Swal.fire({
+        background: '#414141cc',
+        color: '#f4772a',
         icon: 'warning',
         title: 'Contraseña Incorrecta',
         text: 'Intente de nuevo',
       })
     } else {
       await Swal.fire({
+        background: '#414141cc',
+        color: '#f4772a',
         icon: 'success',
         title: `Ingreso Exitoso!`
       })
